@@ -2185,6 +2185,13 @@
   <parent link="base_link"/>
   <child link="root_link"/>
 </joint>
+ <link name ="world"/>
+  <joint name="world_base_fixed_joint" type="fixed">
+  <origin xyz="0 0 0" rpy="0 -0 0"/>
+  <axis xyz="0 0 0"/>
+  <parent link="world"/>
+  <child link="base_link"/>
+</joint>
   <link name="l_foot_dh_frame"/>
   <joint name="l_foot_dh_frame_fixed_joint" type="fixed">
   <origin xyz="0.0 0 0.004" rpy="0 1.5708 0"/>
@@ -2283,6 +2290,9 @@
 </plugin>
 <plugin name='controlboard_ros' filename='libgazebo_yarp_controlboard.so'>
       <yarpConfigurationFile>model://icub/conf/gazebo_icub_ros.ini</yarpConfigurationFile>
+</plugin>
+<plugin name='externalwrench' filename='libgazebo_yarp_externalwrench.so'>
+      <yarpConfigurationFile>model://icub/conf/gazebo_icub_robotname.ini</yarpConfigurationFile>
 </plugin>
 </gazebo>
   <gazebo reference="r_hip_pitch">
