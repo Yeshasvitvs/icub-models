@@ -2289,10 +2289,10 @@
   <yarpConfigurationFile>model://iCub/conf/gazebo_icub_left_leg.ini</yarpConfigurationFile>
 </plugin>
 <plugin name='controlboard_ros' filename='libgazebo_yarp_controlboard.so'>
-      <yarpConfigurationFile>model://icub/conf/gazebo_icub_ros.ini</yarpConfigurationFile>
+      <yarpConfigurationFile>model://iCub/conf/gazebo_icub_ros.ini</yarpConfigurationFile>
 </plugin>
 <plugin name='externalwrench' filename='libgazebo_yarp_externalwrench.so'>
-      <yarpConfigurationFile>model://icub/conf/gazebo_icub_robotname.ini</yarpConfigurationFile>
+      <yarpConfigurationFile>model://iCub/conf/gazebo_icub_robotname.ini</yarpConfigurationFile>
 </plugin>
 </gazebo>
   <gazebo reference="r_hip_pitch">
